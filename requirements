@@ -1,0 +1,73 @@
+Step 1: Explore the Data
+
+Open the CSV file and view the first 10 rows.
+
+Check the column names and their count.
+
+Identify the number of missing values in each column.
+
+Get an understanding of data types (string, numeric, date, JSON).
+
+Step 2: Basic String Cleaning
+
+Strip whitespace from each string column.
+
+Replace empty strings with NaN or Null.
+
+Step 3: Clean Numbers and Dates
+
+Clean numeric columns like Age, Score, GPA, Attendance, Money_Spent and convert them to int or float.
+
+Convert date columns to pandas datetime format.
+
+Step 4: Email and Phone Validation
+
+Convert emails to lowercase and detect incorrectly formatted emails.
+
+Clean phone numbers and standardize them (e.g., +998...).
+
+Step 5: JSON Parsing
+
+Parse JSON columns (e.g., profile_json).
+
+Extract information from JSON into separate columns: hobbies, skills, family, devices.
+
+Check and flatten arrays or nested objects in the JSON.
+
+Step 6: Address Parsing
+
+Split the Address column into separate parts/keys: city, district, postal code.
+
+Keep the raw address column and create new columns (addr_city, addr_district, addr_postal).
+
+Step 7: Check Duplicates and Missing Data
+
+Identify and remove duplicate rows.
+
+Check for missing values in important columns and decide whether to fillna or dropna.
+
+Step 8: Data Normalization
+
+Standardize the Gender column: Male / Female / Unknown.
+
+Normalize course names: Data Science / Python / Other.
+
+Standardize the Status column (lowercase or uniform format).
+
+Step 9: Final Type Conversion and Export
+
+Ensure all columns have the correct type: string, int, float, datetime.
+
+Standardize dates to a single format (YYYY-MM-DD HH:MM:SS).
+
+Save the cleaned data to a CSV file (super_dirty_students_cleaned.csv).
+
+Step 10: QA Checks
+
+Compare the row count of the original and cleaned data.
+
+Check the number of missing emails and phone numbers.
+
+Verify numeric columns (GPA, Attendance, Score) are within valid ranges.
+
+Confirm that there are no duplicate rows.
